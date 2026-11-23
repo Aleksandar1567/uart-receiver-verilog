@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="288" viewBox="0 0 1100 288"><style>
+text { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #1f2328; }
+.label { font-weight: 600; }
+.wave { stroke: #0969da; stroke-width: 1.5; fill: none; }
+.spike { stroke: #cf222e; stroke-width: 1.5; }
+.bus  { stroke: #8250df; stroke-width: 1.2; fill: #8250df14; }
+.grid { stroke: #d0d7de; stroke-width: 0.5; }
+.idle { stroke: #8c959f; stroke-width: 1; stroke-dasharray: 3 3; }
+.title { font-size: 13px; font-weight: 700; }
+.bit { font-size: 11px; fill: #57606a; }
+@media (prefers-color-scheme: dark) {
+  text { fill: #e6edf3; }
+  .wave { stroke: #4493f8; }
+  .spike { stroke: #ff7b72; }
+  .bus  { stroke: #ab7df8; fill: #ab7df81f; }
+  .grid { stroke: #30363d; }
+  .bit { fill: #8d96a0; }
+}
+</style>
+<text class="title" x="8" y="18">8E1 frame 0x4B: majority vote at each bit centre (red), LSB first into shift_reg, rx_valid at the centre of the stop bit</text>
+<line class="grid" x1="150.0" y1="40" x2="150.0" y2="280"/>
+<line class="grid" x1="219.6" y1="40" x2="219.6" y2="280"/>
+<line class="grid" x1="289.3" y1="40" x2="289.3" y2="280"/>
+<line class="grid" x1="358.9" y1="40" x2="358.9" y2="280"/>
+<line class="grid" x1="428.5" y1="40" x2="428.5" y2="280"/>
+<line class="grid" x1="498.1" y1="40" x2="498.1" y2="280"/>
+<line class="grid" x1="567.8" y1="40" x2="567.8" y2="280"/>
+<line class="grid" x1="637.4" y1="40" x2="637.4" y2="280"/>
+<line class="grid" x1="707.0" y1="40" x2="707.0" y2="280"/>
+<line class="grid" x1="776.7" y1="40" x2="776.7" y2="280"/>
+<line class="grid" x1="846.3" y1="40" x2="846.3" y2="280"/>
+<line class="grid" x1="915.9" y1="40" x2="915.9" y2="280"/>
+<line class="grid" x1="985.6" y1="40" x2="985.6" y2="280"/>
+<line class="grid" x1="1055.2" y1="40" x2="1055.2" y2="280"/>
+<text class="bit" x="254.4" y="36" text-anchor="middle">start</text>
+<text class="bit" x="324.1" y="36" text-anchor="middle">D0</text>
+<text class="bit" x="393.7" y="36" text-anchor="middle">D1</text>
+<text class="bit" x="463.3" y="36" text-anchor="middle">D2</text>
+<text class="bit" x="533.0" y="36" text-anchor="middle">D3</text>
+<text class="bit" x="602.6" y="36" text-anchor="middle">D4</text>
+<text class="bit" x="672.2" y="36" text-anchor="middle">D5</text>
+<text class="bit" x="741.9" y="36" text-anchor="middle">D6</text>
+<text class="bit" x="811.5" y="36" text-anchor="middle">D7</text>
+<text class="bit" x="881.1" y="36" text-anchor="middle">P</text>
+<text class="bit" x="950.7" y="36" text-anchor="middle">stop</text>
+<text class="label" x="8" y="60.0">rx</text>
+<polyline class="wave" points="150.0,48 219.2,48 219.2,64 288.9,64 288.9,48 428.1,48 428.1,64 497.8,64 497.8,48 567.4,48 567.4,64 706.6,64 706.6,48 776.3,48 776.3,64 915.5,64 915.5,48 1090.0,48"/>
+<text class="label" x="8" y="86.0">rx_sync</text>
+<polyline class="wave" points="150.0,74 219.5,74 219.5,90 289.1,90 289.1,74 428.3,74 428.3,90 498.0,90 498.0,74 567.6,74 567.6,90 706.8,90 706.8,74 776.5,74 776.5,90 915.7,90 915.7,74 1090.0,74"/>
+<text class="label" x="8" y="112.0">state</text>
+<polygon class="bus" points="151.0,108.0 154.0,100 215.6,100 218.6,108.0 215.6,116 154.0,116"/>
+<text x="184.8" y="112.0" text-anchor="middle">IDLE</text>
+<polygon class="bus" points="220.6,108.0 223.6,100 258.0,100 261.0,108.0 258.0,116 223.6,116"/>
+<polygon class="bus" points="263.0,108.0 266.0,100 812.4,100 815.4,108.0 812.4,116 266.0,116"/>
+<text x="539.2" y="112.0" text-anchor="middle">DATA</text>
+<polygon class="bus" points="817.4,108.0 820.4,100 881.7,100 884.7,108.0 881.7,116 820.4,116"/>
+<text x="851.1" y="112.0" text-anchor="middle">PARITY</text>
+<polygon class="bus" points="886.7,108.0 889.7,100 951.0,100 954.0,108.0 951.0,116 889.7,116"/>
+<text x="920.4" y="112.0" text-anchor="middle">STOP</text>
+<polygon class="bus" points="956.0,108.0 959.0,100 1086.0,100 1089.0,108.0 1086.0,116 959.0,116"/>
+<text x="1022.5" y="112.0" text-anchor="middle">IDLE</text>
+<text class="label" x="8" y="138.0">bit_cnt</text>
+<polygon class="bus" points="151.0,134.0 154.0,126 327.3,126 330.3,134.0 327.3,142 154.0,142"/>
+<text x="240.6" y="138.0" text-anchor="middle">0</text>
+<polygon class="bus" points="332.3,134.0 335.3,126 396.6,126 399.6,134.0 396.6,142 335.3,142"/>
+<text x="365.9" y="138.0" text-anchor="middle">1</text>
+<polygon class="bus" points="401.6,134.0 404.6,126 465.9,126 468.9,134.0 465.9,142 404.6,142"/>
+<text x="435.2" y="138.0" text-anchor="middle">2</text>
+<polygon class="bus" points="470.9,134.0 473.9,126 535.2,126 538.2,134.0 535.2,142 473.9,142"/>
+<text x="504.5" y="138.0" text-anchor="middle">3</text>
+<polygon class="bus" points="540.2,134.0 543.2,126 604.5,126 607.5,134.0 604.5,142 543.2,142"/>
+<text x="573.9" y="138.0" text-anchor="middle">4</text>
+<polygon class="bus" points="609.5,134.0 612.5,126 673.8,126 676.8,134.0 673.8,142 612.5,142"/>
+<text x="643.2" y="138.0" text-anchor="middle">5</text>
+<polygon class="bus" points="678.8,134.0 681.8,126 743.1,126 746.1,134.0 743.1,142 681.8,142"/>
+<text x="712.5" y="138.0" text-anchor="middle">6</text>
+<polygon class="bus" points="748.1,134.0 751.1,126 1086.0,126 1089.0,134.0 1086.0,142 751.1,142"/>
+<text x="918.6" y="138.0" text-anchor="middle">7</text>
+<text class="label" x="8" y="164.0">sample_pt</text>
+<line class="idle" x1="150" y1="168" x2="1090" y2="168"/>
+<line class="spike" x1="261.8" y1="152" x2="261.8" y2="168"/>
+<line class="spike" x1="331.1" y1="152" x2="331.1" y2="168"/>
+<line class="spike" x1="400.4" y1="152" x2="400.4" y2="168"/>
+<line class="spike" x1="469.7" y1="152" x2="469.7" y2="168"/>
+<line class="spike" x1="539.0" y1="152" x2="539.0" y2="168"/>
+<line class="spike" x1="608.3" y1="152" x2="608.3" y2="168"/>
+<line class="spike" x1="677.6" y1="152" x2="677.6" y2="168"/>
+<line class="spike" x1="747.0" y1="152" x2="747.0" y2="168"/>
+<line class="spike" x1="816.3" y1="152" x2="816.3" y2="168"/>
+<line class="spike" x1="885.6" y1="152" x2="885.6" y2="168"/>
+<line class="spike" x1="954.9" y1="152" x2="954.9" y2="168"/>
+<text class="label" x="8" y="190.0">shift_reg</text>
+<polygon class="bus" points="151.0,186.0 154.0,178 327.3,178 330.3,186.0 327.3,194 154.0,194"/>
+<text x="240.6" y="190.0" text-anchor="middle">00</text>
+<polygon class="bus" points="332.3,186.0 335.3,178 396.6,178 399.6,186.0 396.6,194 335.3,194"/>
+<text x="365.9" y="190.0" text-anchor="middle">80</text>
+<polygon class="bus" points="401.6,186.0 404.6,178 465.9,178 468.9,186.0 465.9,194 404.6,194"/>
+<text x="435.2" y="190.0" text-anchor="middle">c0</text>
+<polygon class="bus" points="470.9,186.0 473.9,178 535.2,178 538.2,186.0 535.2,194 473.9,194"/>
+<text x="504.5" y="190.0" text-anchor="middle">60</text>
+<polygon class="bus" points="540.2,186.0 543.2,178 604.5,178 607.5,186.0 604.5,194 543.2,194"/>
+<text x="573.9" y="190.0" text-anchor="middle">b0</text>
+<polygon class="bus" points="609.5,186.0 612.5,178 673.8,178 676.8,186.0 673.8,194 612.5,194"/>
+<text x="643.2" y="190.0" text-anchor="middle">58</text>
+<polygon class="bus" points="678.8,186.0 681.8,178 743.1,178 746.1,186.0 743.1,194 681.8,194"/>
+<text x="712.5" y="190.0" text-anchor="middle">2c</text>
+<polygon class="bus" points="748.1,186.0 751.1,178 812.4,178 815.4,186.0 812.4,194 751.1,194"/>
+<text x="781.8" y="190.0" text-anchor="middle">96</text>
+<polygon class="bus" points="817.4,186.0 820.4,178 1086.0,178 1089.0,186.0 1086.0,194 820.4,194"/>
+<text x="953.2" y="190.0" text-anchor="middle">4b</text>
+<text class="label" x="8" y="216.0">rx_valid</text>
+<polyline class="wave" points="150.0,220 955.0,220 955.0,204 990.2,204 990.2,220 1090.0,220"/>
+<text class="label" x="8" y="242.0">rx_data</text>
+<polygon class="bus" points="151.0,238.0 154.0,230 951.0,230 954.0,238.0 951.0,246 154.0,246"/>
+<text x="552.5" y="242.0" text-anchor="middle">00</text>
+<polygon class="bus" points="956.0,238.0 959.0,230 1086.0,230 1089.0,238.0 1086.0,246 959.0,246"/>
+<text x="1022.5" y="242.0" text-anchor="middle">4b</text>
+<text class="label" x="8" y="268.0">rx_rd</text>
+<polyline class="wave" points="150.0,272 990.0,272 990.0,256 990.2,256 990.2,272 1090.0,272"/>
+</svg>

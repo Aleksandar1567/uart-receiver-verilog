@@ -1,0 +1,24 @@
+# Self-checking testbench in all frame formats (Icarus) + Verilator lint.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sim:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Icarus Verilog + Verilator
+        run: sudo apt-get update && sudo apt-get install -y iverilog verilator
+      - name: Lint (Verilator -Wall)
+        run: make lint
+      - name: Simulate (5 frame formats)
+        run: make test
+      - name: Waveform SVGs are reproducible
+        run: |
+          iverilog -g2005 -o build/tb_wave.vvp tb/tb_wave.v rtl/baud_gen.v rtl/uart_rx.v
+          vvp -n build/tb_wave.vvp
+          python3 scripts/wave_svg.py build/tb_wave.vcd docs/img
+          git diff --exit-code -- docs/img/wave_frame.svg docs/img/wave_errors.svg

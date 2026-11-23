@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="274" viewBox="0 0 1100 274"><style>
+text { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #1f2328; }
+.label { font-weight: 600; }
+.wave { stroke: #0969da; stroke-width: 1.5; fill: none; }
+.spike { stroke: #cf222e; stroke-width: 1.5; }
+.bus  { stroke: #8250df; stroke-width: 1.2; fill: #8250df14; }
+.grid { stroke: #d0d7de; stroke-width: 0.5; }
+.idle { stroke: #8c959f; stroke-width: 1; stroke-dasharray: 3 3; }
+.title { font-size: 13px; font-weight: 700; }
+.bit { font-size: 11px; fill: #57606a; }
+@media (prefers-color-scheme: dark) {
+  text { fill: #e6edf3; }
+  .wave { stroke: #4493f8; }
+  .spike { stroke: #ff7b72; }
+  .bus  { stroke: #ab7df8; fill: #ab7df81f; }
+  .grid { stroke: #30363d; }
+  .bit { fill: #8d96a0; }
+}
+</style>
+<text class="title" x="8" y="18">Errors: start glitch rejected, 0xC3 with bad parity, break -&gt; WAIT_IDLE until the line is high</text>
+<line class="grid" x1="150.0" y1="26" x2="150.0" y2="266"/>
+<line class="grid" x1="176.7" y1="26" x2="176.7" y2="266"/>
+<line class="grid" x1="203.4" y1="26" x2="203.4" y2="266"/>
+<line class="grid" x1="230.1" y1="26" x2="230.1" y2="266"/>
+<line class="grid" x1="256.9" y1="26" x2="256.9" y2="266"/>
+<line class="grid" x1="283.6" y1="26" x2="283.6" y2="266"/>
+<line class="grid" x1="310.3" y1="26" x2="310.3" y2="266"/>
+<line class="grid" x1="337.0" y1="26" x2="337.0" y2="266"/>
+<line class="grid" x1="363.7" y1="26" x2="363.7" y2="266"/>
+<line class="grid" x1="390.4" y1="26" x2="390.4" y2="266"/>
+<line class="grid" x1="417.1" y1="26" x2="417.1" y2="266"/>
+<line class="grid" x1="443.9" y1="26" x2="443.9" y2="266"/>
+<line class="grid" x1="470.6" y1="26" x2="470.6" y2="266"/>
+<line class="grid" x1="497.3" y1="26" x2="497.3" y2="266"/>
+<line class="grid" x1="524.0" y1="26" x2="524.0" y2="266"/>
+<line class="grid" x1="550.7" y1="26" x2="550.7" y2="266"/>
+<line class="grid" x1="577.4" y1="26" x2="577.4" y2="266"/>
+<line class="grid" x1="604.1" y1="26" x2="604.1" y2="266"/>
+<line class="grid" x1="630.8" y1="26" x2="630.8" y2="266"/>
+<line class="grid" x1="657.6" y1="26" x2="657.6" y2="266"/>
+<line class="grid" x1="684.3" y1="26" x2="684.3" y2="266"/>
+<line class="grid" x1="711.0" y1="26" x2="711.0" y2="266"/>
+<line class="grid" x1="737.7" y1="26" x2="737.7" y2="266"/>
+<line class="grid" x1="764.4" y1="26" x2="764.4" y2="266"/>
+<line class="grid" x1="791.1" y1="26" x2="791.1" y2="266"/>
+<line class="grid" x1="817.8" y1="26" x2="817.8" y2="266"/>
+<line class="grid" x1="844.6" y1="26" x2="844.6" y2="266"/>
+<line class="grid" x1="871.3" y1="26" x2="871.3" y2="266"/>
+<line class="grid" x1="898.0" y1="26" x2="898.0" y2="266"/>
+<line class="grid" x1="924.7" y1="26" x2="924.7" y2="266"/>
+<line class="grid" x1="951.4" y1="26" x2="951.4" y2="266"/>
+<line class="grid" x1="978.1" y1="26" x2="978.1" y2="266"/>
+<line class="grid" x1="1004.8" y1="26" x2="1004.8" y2="266"/>
+<line class="grid" x1="1031.6" y1="26" x2="1031.6" y2="266"/>
+<line class="grid" x1="1058.3" y1="26" x2="1058.3" y2="266"/>
+<line class="grid" x1="1085.0" y1="26" x2="1085.0" y2="266"/>
+<text class="label" x="8" y="46.0">rx</text>
+<polyline class="wave" points="150.0,34 176.6,34 176.6,50 181.6,50 181.6,34 261.7,34 261.7,50 288.5,50 288.5,34 341.9,34 341.9,50 448.7,50 448.7,34 635.7,34 635.7,50 1009.7,50 1009.7,34 1090.0,34"/>
+<text class="label" x="8" y="72.0">state</text>
+<polygon class="bus" points="151.0,68.0 154.0,60 172.7,60 175.7,68.0 172.7,76 154.0,76"/>
+<polygon class="bus" points="177.7,68.0 180.7,60 188.9,60 191.9,68.0 188.9,76 180.7,76"/>
+<polygon class="bus" points="193.9,68.0 196.9,60 257.9,60 260.9,68.0 257.9,76 196.9,76"/>
+<text x="227.4" y="72.0" text-anchor="middle">IDLE</text>
+<polygon class="bus" points="262.9,68.0 265.9,60 273.7,60 276.7,68.0 273.7,76 265.9,76"/>
+<polygon class="bus" points="278.7,68.0 281.7,60 486.4,60 489.4,68.0 486.4,76 281.7,76"/>
+<text x="384.0" y="72.0" text-anchor="middle">DATA</text>
+<polygon class="bus" points="491.4,68.0 494.4,60 513.0,60 516.0,68.0 513.0,76 494.4,76"/>
+<polygon class="bus" points="518.0,68.0 521.0,60 539.5,60 542.5,68.0 539.5,76 521.0,76"/>
+<polygon class="bus" points="544.5,68.0 547.5,60 631.9,60 634.9,68.0 631.9,76 547.5,76"/>
+<text x="589.7" y="72.0" text-anchor="middle">IDLE</text>
+<polygon class="bus" points="636.9,68.0 639.9,60 647.6,60 650.6,68.0 647.6,76 639.9,76"/>
+<polygon class="bus" points="652.6,68.0 655.6,60 860.3,60 863.3,68.0 860.3,76 655.6,76"/>
+<text x="757.9" y="72.0" text-anchor="middle">DATA</text>
+<polygon class="bus" points="865.3,68.0 868.3,60 886.9,60 889.9,68.0 886.9,76 868.3,76"/>
+<polygon class="bus" points="891.9,68.0 894.9,60 913.5,60 916.5,68.0 913.5,76 894.9,76"/>
+<polygon class="bus" points="918.5,68.0 921.5,60 1005.9,60 1008.9,68.0 1005.9,76 921.5,76"/>
+<text x="963.7" y="72.0" text-anchor="middle">WAIT_IDLE</text>
+<polygon class="bus" points="1010.9,68.0 1013.9,60 1086.0,60 1089.0,68.0 1086.0,76 1013.9,76"/>
+<text x="1049.9" y="72.0" text-anchor="middle">IDLE</text>
+<text class="label" x="8" y="98.0">sample_pt</text>
+<line class="idle" x1="150" y1="102" x2="1090" y2="102"/>
+<line class="spike" x1="192.8" y1="86" x2="192.8" y2="102"/>
+<line class="spike" x1="277.6" y1="86" x2="277.6" y2="102"/>
+<line class="spike" x1="304.2" y1="86" x2="304.2" y2="102"/>
+<line class="spike" x1="330.8" y1="86" x2="330.8" y2="102"/>
+<line class="spike" x1="357.4" y1="86" x2="357.4" y2="102"/>
+<line class="spike" x1="383.9" y1="86" x2="383.9" y2="102"/>
+<line class="spike" x1="410.5" y1="86" x2="410.5" y2="102"/>
+<line class="spike" x1="437.1" y1="86" x2="437.1" y2="102"/>
+<line class="spike" x1="463.7" y1="86" x2="463.7" y2="102"/>
+<line class="spike" x1="490.3" y1="86" x2="490.3" y2="102"/>
+<line class="spike" x1="516.9" y1="86" x2="516.9" y2="102"/>
+<line class="spike" x1="543.5" y1="86" x2="543.5" y2="102"/>
+<line class="spike" x1="651.5" y1="86" x2="651.5" y2="102"/>
+<line class="spike" x1="678.1" y1="86" x2="678.1" y2="102"/>
+<line class="spike" x1="704.7" y1="86" x2="704.7" y2="102"/>
+<line class="spike" x1="731.3" y1="86" x2="731.3" y2="102"/>
+<line class="spike" x1="757.9" y1="86" x2="757.9" y2="102"/>
+<line class="spike" x1="784.4" y1="86" x2="784.4" y2="102"/>
+<line class="spike" x1="811.0" y1="86" x2="811.0" y2="102"/>
+<line class="spike" x1="837.6" y1="86" x2="837.6" y2="102"/>
+<line class="spike" x1="864.2" y1="86" x2="864.2" y2="102"/>
+<line class="spike" x1="890.8" y1="86" x2="890.8" y2="102"/>
+<line class="spike" x1="917.4" y1="86" x2="917.4" y2="102"/>
+<text class="label" x="8" y="124.0">rx_valid</text>
+<polyline class="wave" points="150.0,128 543.5,128 543.5,112 557.0,112 557.0,128 917.5,128 917.5,112 930.9,112 930.9,128 1090.0,128"/>
+<text class="label" x="8" y="150.0">rx_data</text>
+<polygon class="bus" points="151.0,146.0 154.0,138 539.5,138 542.5,146.0 539.5,154 154.0,154"/>
+<text x="346.8" y="150.0" text-anchor="middle">4b</text>
+<polygon class="bus" points="544.5,146.0 547.5,138 913.5,138 916.5,146.0 913.5,154 547.5,154"/>
+<text x="730.5" y="150.0" text-anchor="middle">c3</text>
+<polygon class="bus" points="918.5,146.0 921.5,138 1086.0,138 1089.0,146.0 1086.0,154 921.5,154"/>
+<text x="1003.7" y="150.0" text-anchor="middle">00</text>
+<text class="label" x="8" y="176.0">parity_err</text>
+<polyline class="wave" points="150.0,180 543.5,180 543.5,164 917.5,164 917.5,180 1090.0,180"/>
+<text class="label" x="8" y="202.0">frame_err</text>
+<polyline class="wave" points="150.0,206 917.5,206 917.5,190 1090.0,190"/>
+<text class="label" x="8" y="228.0">break_det</text>
+<polyline class="wave" points="150.0,232 917.5,232 917.5,216 1090.0,216"/>
+<text class="label" x="8" y="254.0">rx_busy</text>
+<polyline class="wave" points="150.0,258 176.7,258 176.7,242 192.9,242 192.9,258 261.9,258 261.9,242 543.5,242 543.5,258 635.9,258 635.9,242 1009.9,242 1009.9,258 1090.0,258"/>
+</svg>
